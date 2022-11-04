@@ -36,6 +36,6 @@ int main() {
         }
     }
     else
-        printf("Por favor digite um numeros positivos.");
+        printf("Por favor digite numeros positivos.");
     return 0;
 }
