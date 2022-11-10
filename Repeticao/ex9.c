@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    double media;
-    int buffer, ph = 10;
-    for(int i = 0; i < 10; i++) {
-        printf("Digite o numero inteiro positivo %d : ", i + 1);
-        scanf("%d", &buffer);
-        if(buffer < 0) {
-            ph--;
-            continue;
-        }
-        media += ((double) buffer);
+    double menor, maior, numero;
+    printf("Digite o numero 1 : ");
+    scanf("%lf", &numero);
+    maior = numero;
+    menor = numero;
+    for(int i = 1; i < 10; i++) {
+        printf("Digite o numero %d : ", i + 1);
+        scanf("%lf", &numero);
+        if(numero > maior)
+            maior = numero;
+        if(numero < menor)
+            menor = numero;
     }
-    media = media / ph;
-    printf("Media: %g", media);
     return 0;
 }
