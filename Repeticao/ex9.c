@@ -14,5 +14,7 @@ int main() {
         if(numero < menor)
             menor = numero;
     }
+    printf("Maior: %g", maior);
+    printg("Menor: %g", menor);
     return 0;
 }
