@@ -26,6 +26,7 @@ int main() {
         printf("Aluno em exame.\n");
         printf("Nota do exame: ");
         scanf("%lf", &nexame);
+        nexame = floor(nexame*10)/10;
         media = (media + nexame)/2;
         if(media >= 5) {
             printf("Aluno aprovado.\n");
